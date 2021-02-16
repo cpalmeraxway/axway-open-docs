@@ -382,3 +382,12 @@ Axway-defined Java system properties introduced in the 7.7 20210130 release
 | System Property                                  | Context     | Description                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |com.axway.apigw.sftp.knowninsecure.allow | API Gateway |If set to true, the embedded SFTP server will allow connection from clients using known insecure cipher suites. Default value: false. |
+
+
+## 7.7 March 2021
+
+Axway-defined Java system properties introduced in the 7.7 20210330 release
+
+| System Property                                  | Context     | Description                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|com.axway.apimanager.user.tlds | API Manager|Specifies a list of user defined top level domains to be included in domain valiation when adding a Trusted Certificate to an API Manager front-end API using a url. Default value: "". |
