@@ -1,9 +1,9 @@
 {
 "title": "Install an Apache Cassandra database",
-"linkTitle": "Install Apache Cassandra",
-"weight":"8",
-"date": "2019-10-02",
-"description": "Install Apache Cassandra to store data for API Manager or API Gateway client registry (API key and OAuth)."
+  "linkTitle": "Install Apache Cassandra",
+  "weight": "8",
+  "date": "2019-10-02",
+  "description": "Install Apache Cassandra to store data for API Manager or API Gateway client registry (API key and OAuth)."
 }
 
 Apache Cassandra is required to store data for API Manager (for example, API catalog, quotas, and client registry) or API Gateway client registry (API key and OAuth). In addition, Cassandra is optional to store data for the following API Gateway components:
@@ -40,12 +40,19 @@ API Gateway supports the following in production:
 * **Cassandra**:
     * Cassandra version 2.2.12
     * 64-bit OpenJDK JRE or Oracle JRE version 8
+    
 
 For details on requirements for high availability, see [Configure a Cassandra HA cluster](/docs/cass_admin/cassandra_config/).
 
 ### JRE requirements and recommendations
 
 The default API Gateway installation includes a 64-bit OpenJDK JRE (`apigateway/Linux.x86_64/jre/bin`). You can configure Cassandra to use the API Gateway JRE (for example, in a demo environment), but it is recommended that you install a separate JRE (OpenJDK or Oracle) for use with Cassandra. When using a separate JRE, use the same version (or at least the same major version) as the API Gateway uses.
+
+### Cassandra Hardware
+
+Cassandra hardware choice recommendations can be found at [Hardware Choices]( https://cassandra.apache.org/doc/latest/operating/hardware.html).
+Cassandra is designed to run on commodity distributed drives, and therefore it is strongly recommended not to use a Storage Area Network for Cassandra deployments.
+
 
 ## Install Apache Cassandra
 
