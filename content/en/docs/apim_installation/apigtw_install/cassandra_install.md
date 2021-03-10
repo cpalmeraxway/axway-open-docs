@@ -51,7 +51,7 @@ The default API Gateway installation includes a 64-bit OpenJDK JRE (`apigateway/
 
 Cassandra is designed to run on commodity distributed drives, and therefore it is strongly recommended not to use a storage area network (SAN) for Cassandra deployments.
 
-For more information on Cassandra hardware choice recommendations, see [Hardware choices]( https://cassandra.apache.org/doc/latest/operating/hardware.html) in Apache Cassandra documentation.
+For more information on Cassandra hardware choice recommendations, see [Hardware choices]( https://cassandra.apache.org/doc/latest/operating/hardware.html).
 
 ## Install Apache Cassandra
 
